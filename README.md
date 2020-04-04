@@ -54,7 +54,7 @@ mount /dev/sdb1 /mnt/boot
 title Arch Linux
 linux /vmlinuz-linux
 initrd /initramfs-linux.img
-options cryptdevice=UUID={UUID}:volume root=/dev/mapper/volume-root quiet rw
+options cryptdevice=UUID={UUID}:cryptlvm root=/dev/MyVolGroup/root quiet rw
 ```
 Run inside Vim `:read ! blkid /dev/nvm -s UUID -o value /dev/nvme0n1p2` to get UUID
 * Install NetworkManager before reboot 
