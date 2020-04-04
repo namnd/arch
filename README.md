@@ -38,7 +38,7 @@ mount /dev/sdb1 /mnt/boot
 * Generate fstab `genfstab -U /mnt >> /mnt/etc/fstab`
 * chroot `arch-chroot /mnt`
 * Set timezone `ln -sf /usr/share/zoneinfo/Australia/Melbourne /etc/localtime`
-* Adjust time `hwclock -systohc`
+* Adjust time `hwclock --systohc`
 * Install Vim `pacman -S vim`
 * Edit file `vim /etc/locale.gen` and uncomment `en_US.UTF-8 UTF-8`
 * Generate locale `locale-gen`
