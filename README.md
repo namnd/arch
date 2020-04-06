@@ -44,6 +44,13 @@ mount /dev/sdb1 /mnt/boot
 * Generate locale `locale-gen`
 * Create file `vim /etc/locale.conf` and insert `LANG=en_US.UTF-8`
 * `echo “arch” > /etc/hostname`
+* Update `/etc/hosts`
+```bash
+/etc/hosts
+127.0.0.1	localhost
+::1		localhost
+127.0.1.1	arch.localdomain	arch
+```
 * Install lvm2 package `pacman -S lvm2`
 * Add encrypt and lvm2 `vim /etc/mkinitcpio.conf`
 * Creating a new initramfs `mkinitcpio -P`
