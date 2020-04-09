@@ -13,5 +13,6 @@ sudo pacman -S xbindkeys
 sudo pacman -S xorg-xinput
 sudo pacman -S xorg-xbacklight
 sudo pacman -S alsa-utils # Sound
+sudo pacman -S openssh # ssh-keygen
 ```
 * Update kernel parameter `sudo vim /boot/loader/entries/arch.conf` and add `options mem_sleep_default=deep`
