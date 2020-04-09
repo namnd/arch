@@ -16,4 +16,8 @@ sudo pacman -S alsa-utils # Sound
 sudo pacman -S openssh # ssh-keygen
 ```
 * Update kernel parameter `sudo vim /boot/loader/entries/arch.conf` and add `options mem_sleep_default=deep`
-* Install optimus-manager for graphics switching between NVIDIA and Intel
+* Install `optimus-manager` for graphics switching between NVIDIA and Intel
+```
+optimus-manager --switch hybrid   # Use hybrid graphics (Requires xorg-server >= 1.20.6-1)
+optimus-manager --set-startup hybrid
+```
