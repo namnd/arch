@@ -9,5 +9,7 @@ sudo pacman -S xf86-video-intel
 sudo pacman -S xorg-xinit
 sudo pacman -S libxft # FreeType-based font drawing library for X
 sudo pacman -S xorg-xdpyinfo # Display information utility for X
+sudo pacman -S xbindkeys
+sudo pacman -S xorg-xinput
 ```
 * Update kernel parameter `sudo vim /boot/loader/entries/arch.conf` and add `options mem_sleep_default=deep`
